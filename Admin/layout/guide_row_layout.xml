@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fffefe"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fffefe">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+android:layout_marginLeft="20dp"
+
+        android:text=" Guide Name "
+        android:textColor="#111111"
+
+        android:textSize="25sp"
+
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/contact"
+        android:textColor="#8e8c8c"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text=" Contact number"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/approved"
+        android:text="APPROVED"
+        android:textStyle="bold"
+        android:textColor="#49e349"
+        android:layout_marginEnd="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/name" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#696969"
+                android:layout_marginEnd="12dp"
+                android:layout_below="@+id/name"
+                android:layout_alignEnd="@+id/approved"
+                android:id="@+id/check"/>
+        </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

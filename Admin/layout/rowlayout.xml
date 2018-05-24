@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:background="#ffffff"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fffefe"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fffefe">
+
+    <TextView
+        android:id="@+id/host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Host Name"
+        android:textColor="#111111"
+        android:textSize="25sp"
+
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:textColor="#8e8c8c"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Address"
+        android:layout_below="@+id/host"
+        android:layout_alignStart="@+id/host" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact"
+        android:textColor="#8e8c8c"
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:text="Contact no"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/address"
+        android:layout_alignStart="@+id/host" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/contact"
+        android:id="@+id/rooms"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+
+        android:text="Rooms available"
+        android:textColor="#8e8c8c"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/h_approved"
+        android:text="APPROVED"
+        android:textStyle="bold"
+        android:textColor="#25d125"
+        android:layout_below="@+id/host"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        android:layout_above="@+id/contact" />
+          <CheckBox
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/check"
+              android:layout_alignTop="@+id/contact"
+              android:layout_alignEnd="@+id/h_approved"
+              android:background="#696969"
+              android:checked="true"
+              android:layout_marginEnd="13dp" />
+
+
+        </RelativeLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

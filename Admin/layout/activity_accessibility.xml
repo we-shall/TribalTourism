@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCream"
+    tools:context="com.example.asus.admin.Accessibility">
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Accessibility"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Nearest Airport"
+                android:id="@+id/near_air"
+                android:layout_below="@id/textDescription"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutAirportName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/near_air"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textAirportName"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutAirportDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayoutAirportName"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textAirportDistance"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:hint="Distance" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+                <EditText
+                    android:id="@+id/textStation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="19dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="Nearest Station"
+                    android:layout_below="@+id/textLayoutAirportDistance"
+                    android:layout_alignStart="@+id/near_air" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutStationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textStation"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textStationName"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:hint="Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutStationDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayoutStationName"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textStationDistance"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Distance" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:id="@+id/textBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="19dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="Nearest Bus"
+                android:layout_below="@id/textLayoutStationDistance"
+                android:layout_alignStart="@+id/near_air" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutBusName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textBus"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textBusName"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:hint="Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutBusDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayoutBusName"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textBusDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/textLayoutBusDistance"
+
+                    android:hint="Distance" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_below="@id/textLayoutBusDistance"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/textStation"
+                android:layout_marginStart="43dp" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignEnd="@+id/textBus"
+                android:layout_alignTop="@+id/btn_cancel"
+                android:layout_marginTop="12dp"
+                android:text="@string/btn_update" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

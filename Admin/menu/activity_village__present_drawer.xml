@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/h_details"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="Host Details" />
+        <item
+            android:id="@+id/g_details"
+            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="Guide Details" />
+        <item
+            android:id="@+id/t_details"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Trader Details" />
+
+        <item
+            android:id="@+id/event_details"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Event Details" />
+        <item
+            android:id="@+id/gallery"
+            android:title="Image Approval"
+            android:icon="@drawable/ic_check_box_black_24dp"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/schemes"
+        android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+        android:title="Scheme"
+        />
+
+        <item
+            android:id="@+id/faq"
+           android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="FAQ"/>
+    </group>
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_input_black_24dp"
+        android:title="Logout" />
+
+</menu>

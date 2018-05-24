@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.asus.admin.FAQActivity"
+    android:background="#fffefe">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:textSize="30dp"
+        android:id="@+id/tit"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/qu1"
+        android:text="1) What is tribe vibe?
+
+ ans) Tribe vibe is designed to explore tribal heritage of india. More importnatly, it is a platform for tribal population to to promote their own heritage and culture."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:id="@+id/qu2"
+        android:textColor="@color/colorBlack"
+        android:text="2) How to start tribe vibe?
+
+ans) Using tribe vibe is quite easy. If you are a tourist, then simply sign in and start the app. If you do not understand how to sign in, then simply provide phone  number for OTP login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:paddingTop="30dp"
+        android:id="@+id/qu3"
+        android:text="3) Can someone upload own images on tribe vibe?
+
+ans) Yes! Tourists and villagers both can upload images from their gallery onto the app but on Admin's consent"/>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+
+        android:text="bhasha " />
+
+</LinearLayout>

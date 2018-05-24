@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.admin.Events"
+    android:background="#fffefe">
+    <ScrollView
+        android:id="@+id/scroll1"
+
+        android:backgroundTint="@color/colorBlack"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeInner"
+            android:backgroundTint="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="EVENT"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_below="@+id/textEvent"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textName"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textLayoutFabric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayoutName"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:hint="Type Of event (Festival,Business etc)" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textShopName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLayoutFabric"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textInfo"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:hint="Information" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textShopCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textShopName"
+                android:textColorHint="@color/colorBlack">
+
+                <EditText
+                    android:id="@+id/textDate"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    android:hint="Date" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Click on the icon to upload the image"
+                android:textColor="@color/colorBlack"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textShopCost"/>
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="70dp"
+                android:layout_below="@+id/textShopCost"
+                android:src="@drawable/photo"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_update"
+                android:layout_marginTop="38dp"
+                android:layout_below="@+id/images"
+                android:layout_toStartOf="@+id/textEvent" />
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_alignBaseline="@+id/btn_signup"
+                android:layout_alignBottom="@+id/btn_signup"
+                android:layout_toEndOf="@+id/textEvent" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
