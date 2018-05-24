@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vishalsingh.villageexpandedview.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:overScrollMode="ifContentScrolls">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <!-- <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="205dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true" />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom|center_horizontal" />
+            </FrameLayout>
+
+            -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:id="@+id/frame"
+                android:scaleType="fitXY"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/frame"
+                android:background="@color/black" />
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/frame"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/cuisine"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/ic_restaurant_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/cuisine"
+                                android:layout_below="@+id/cuisine"
+                                android:text="Cuisine"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/accessibility"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/ic_directions_bus_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/accessibility"
+                                android:layout_centerHorizontal="true"
+                                android:text="Transport"
+                                android:textAlignment="center"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:background="@color/black"
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/description"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/ic_assignment_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/description"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:text="Description"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/location"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/ic_location_on_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/text5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/location"
+                                android:layout_below="@+id/location"
+                                android:text="Location"
+                                android:textAlignment="center"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/accomodation"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/ic_hotel_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/text6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/accomodation"
+                                android:layout_below="@+id/accomodation"
+                                android:text="Lodging"
+                                android:textAlignment="center"
+                                android:textSize="10sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/clothing"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:baselineAligned="false"
+                                android:src="@drawable/cloth" />
+
+                            <TextView
+                                android:id="@+id/text8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@+id/clothing"
+                                android:layout_below="@+id/clothing"
+                                android:text="Attire"
+                                android:textAlignment="center"
+                                android:textSize="10sp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/trade"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:baselineAligned="false"
+                                android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/text7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/trade"
+                                android:layout_centerHorizontal="true"
+                                android:text="Shopping"
+                                android:textAlignment="center"
+                                android:textSize="10sp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/gallery"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginTop="10dp"
+                                android:baselineAligned="false"
+                                android:src="@drawable/ic_image_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/galleryText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/gallery"
+
+                                android:layout_centerHorizontal="true"
+                                android:text="Gallery"
+                                android:textAlignment="center"
+                                android:textSize="10sp" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/linearLayout"
+                android:background="@color/black" />
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rel"
+                android:layout_below="@+id/linearLayout"
+                android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="6dp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Description"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/imageDescriptionIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textHeading"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_description_black_24dp" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/textHeading"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textHeading"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="13dp" />
+
+                    </ScrollView>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view1"
+                card_view:cardCornerRadius="6dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textHeading1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageHistoryIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textHeading1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginRight="19dp"
+                        android:src="@drawable/ic_history_black_24dp" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/textHeading1"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/textHeading1"
+                        android:layout_marginTop="10dp"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view2"
+                card_view:cardCornerRadius="6dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeCard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textHeading2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Speciality"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageSpeciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textHeading2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginRight="19dp"
+                        android:src="@drawable/ic_folder_special_black_24dp" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/textHeading2"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textSpeciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/textHeading2"
+                        android:layout_marginTop="10dp"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view3"
+                card_view:cardCornerRadius="6dp">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeCard4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textHeading3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Culture"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp" />
+
+                    <ImageView
+                        android:id="@+id/imageCulture"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/culture" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/textHeading3"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textCulture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/textHeading3"
+                        android:layout_marginTop="10dp"/>
+                    </ScrollView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/butt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

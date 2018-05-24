@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linearLayout"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="13dp"
+                android:text="NEAREST AIRPORT:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/airportName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView5"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="24dp"
+                android:text="Babasaheb Ambedkar Airport"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_airplanemode_active_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/textView6"
+                android:text="Distance:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_toStartOf="@+id/imageView2"
+                android:text="20km"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/textView6" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/headRailway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imagetramp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="18dp"
+                android:text="NEAREST RAILWAY STATION:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/railwayName"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/distanceRail"
+                android:text="Nagpur Railway Station"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imagetramp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_directions_transit_black_24dp" />
+
+            <TextView
+                android:id="@+id/distanceRail"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginEnd="59dp"
+                android:layout_toStartOf="@+id/imagetramp"
+                android:text="Distance:" />
+
+            <TextView
+                android:id="@+id/distanceRail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/distanceRail"
+                android:layout_toStartOf="@+id/imagetramp"
+                android:text="20km"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_view1"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageBus"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
+                android:text="NEAREST BUS STOP:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/busName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@+id/distanceBus"
+                android:text="Nagpur Bus Stand"
+                android:padding="10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageBus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_directions_bus_black_24dp" />
+
+            <TextView
+                android:id="@+id/distanceBus"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="11dp"
+                android:layout_toStartOf="@+id/distanceBus1"
+                android:text="Distance:" />
+
+            <TextView
+                android:id="@+id/distanceBus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/distanceBus"
+
+                android:layout_alignBottom="@+id/distanceBus"
+                android:layout_toStartOf="@+id/imageBus"
+                android:text="20km"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view2"
+        android:id="@+id/button"
+        android:text="Dismiss"
+        android:layout_marginTop="33dp" />
+
+</RelativeLayout>

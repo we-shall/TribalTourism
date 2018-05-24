@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="#fffefe">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/maxresdefault" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/cardVillageName"
+        android:layout_below="@+id/image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layoutVillage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Village 1 "
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                 />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/name"
+                android:id="@+id/villageLinear"
+                android:orientation="vertical"
+                android:layout_alignStart="@+id/name"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Some description about the village"
+                    android:textColor="#8e8c8c"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/readmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/name2"
+                    android:layout_alignBottom="@+id/name2"
+                    android:layout_toEndOf="@+id/name2"
+                    android:text="Read more..."
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="3 .6 "
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:id="@+id/rating"
+        android:layout_marginStart="6dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
